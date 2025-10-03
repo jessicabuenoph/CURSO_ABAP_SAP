@@ -67,6 +67,42 @@ Colocar aqui capturas de tela dos relatórios, selection-screens e resultados (e
 
 ---
 
+## 🔐 Checklist — Gerar Token para usar no abapGit (GitHub)
+
+1. **Acesse o GitHub**
+   → Avatar (canto superior direito) → *Settings* → *Developer settings* → *Personal access tokens* → *Fine-grained tokens*.
+
+2. **Clique em** `Generate new token`.
+
+3. **Configurações principais**
+
+   * **Name**: coloque algo descritivo, ex.: `abapGit - CURSO_ABAP_SAP`.
+   * **Expiration**:
+
+     * Preferível: **90 days** (seguro).
+     * Ou **No expiration** (prático).
+   * **Repository access**: selecione → **Only select repositories** → marque `CURSO_ABAP_SAP`.
+
+4. **Permissões (Repository permissions)**
+
+   * **Contents** → `Read and write` ✅
+   * **Metadata** → `Read-only` ✅
+   * (Opcional) **Pull requests** → `Read and write`
+
+5. **Clique em `Generate token`.**
+
+   * Copie o token gerado (ex.: `github_pat_11A...`).
+   * ⚠️ Ele só aparece **uma vez**. Guarde em local seguro (ex.: gerenciador de senhas).
+
+6. **No SAP (abapGit)**
+
+   * **User**: `jessicabuenoph`
+   * **Password or Token**: cole o token gerado.
+
+7. ✔️ Agora pode fazer **Commit → Push** sem erro!
+
+---
+
 ## 📜 Licença
 
 Sugestão: adicionar licença **MIT** para permitir uso livre como portfólio.
@@ -74,4 +110,3 @@ Sugestão: adicionar licença **MIT** para permitir uso livre como portfólio.
 ---
 
 ✨ Desenvolvido por **Jéssica Bueno de Souza** — estudos em ABAP/SAP.
-
